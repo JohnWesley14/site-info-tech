@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Site</title>
+</head>
+<body>
+    <div id="all">
+        <!-- ===================>> INÍCIO DA PRIMEIRA SEÇÃO <<======================= -->
+
+           <!-- ======================>> INÍCIO DA NAV <<========================= -->
+        <nav>
+            
+            <ul>
+                <!-- <li><a href="#left">HTML</a></li> -->
+
+                <img src="Imagens/computer.png" id="imagem">
+
+                <!-- <li><a href="#">CSS</a></li> -->
+
+            </ul>
+        </nav>
+        <!-- =========================>>  FIM DA NAV <<========================= -->
+
+        
+
+        <!-- ========================>> INÍCIO DAS INFORMAÇÕES <<========================= -->
+        <div class="Border-Inicial">
+            <div id="info" class="info">
+                <h1>Informações sobre <br> os cursos  <br> de Informática!</h1>
+                <p><span class="About"></span></p>
+                <div class="redirec">
+                    <a href="#left" id="First-a">Desenvolvimento de Sistemas</a>
+                    <a href="#">Manutenção e Suporte</a>
+                </div>
+            </div>
+            <div id="img-box" class="img-box">
+                <img src="Imagens/cyborg-animate.svg" id="frente-imagem" class="image-svg">
+            </div>
+        </div>
+       
+        <!-- ========================>> FIM DAS INFORMAÇÕES <<========================= -->
+
+          <!-- ===================>> IMAGEM DA PRIMEIRA PÁGINA <<===================== -->
+
+       
+
+    </div>
+
+         <!-- =====================>> FIM DA PRIMEIRA SEÇÃO <<======================== -->
+
+    <div class="IntervalSystem">
+        <!-- =====================>> INÍCIO DA SEGUNDA SEÇÃO <<======================== -->
+        <h1><span class="auto-typing"></span></h1>
+    </div>
+    <div class="sistemas">
+        <div class="Border-System">
+        <!-- =====================>> DIV ESQUERDA E INFO <<======================== -->
+            <div class="left" id="left">
+                
+                    <div id="TextSystems">
+                    <h1>O que se estuda nesse curso?</h1>
+                <p>Neste curso veremos várias disciplinas, tais como:</p>
+                <ul>
+                    <li id="First_Li"><a href="outras-paginas/desenvolvimento-web/web.html" class="Border-A">Desenvolvimento Web</a></li>
+                    <li><a href="outras-paginas/programar/programar.html" class="Border-A">Programação</a></li>
+                    <li><a href="outras-paginas/eletro/eletrotecnica.html" class="Border-A">Eletrotécnica</a></li>
+                </ul>
+                </div>
+                
+                
+        <!-- =====================>> DIV DIREITA E IMAGEM <<======================== -->
+
+            </div>
+
+            <div class="right">
+                <div class="img-system">
+                    <img src="Imagens/desenvolvimento.svg" alt="Animação de uma mulher ao redor de objetos eletrônicos." class="image-svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- <div class="IntervalDev">
+       
+        <h1>Desenvolvimento Web</h1>
+    </div>
+    <div class="DevelopWeb">
+        <div class="Border-Dev">
+        <div class="Develop-left">
+            
+                <div class="Info-Dev">
+                    <h1>O que é desenvolvimento Web?</h1>
+                <h2>É o nome que se dá ao criar e modificar sites<br> como o site que você está vendo agora.</h2>
+                <p>Para criar um site necessitamos usar a tecnologia <span>HTML</span>, que geralmente vem acompanhada do <span>CSS</span> e <span>Javascript</span></p>
+            </div>
+            
+                
+        </div>
+        <div class="Develop-Right">
+            <div class="image-svg">
+                <img src="Imagens/digital-nomad-animate.svg" alt="">
+            </div>
+
+        </div>
+     </div>
+    </div> -->
+    <div class="IntervalSystem">
+        <h1>O que é o curso de Desenvolvimento de Sistemas?</h1>
+        <h1><span class="WhatIs"></span></h1>
+    </div>
+    <div class="Intro">
+        <div class="Border-Intro">
+        
+            <div class="Esquerda-Intro" id="Esquerda-Intro">
+                
+                    <div id="Text-Intro">
+                    
+                <p>O curso é focado no estudo de programação para criar sites, apps, e muito mais!"</p>
+                
+                </div>
+                
+                
+        
+
+            </div>
+
+            <div class="Direita-Intro">
+                <div class="img-intro">
+                    <img src="Imagens/digital-nomad-animate.svg" alt="Animação de uma mulher ao redor de objetos eletrônicos." class="image-svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // =====================>> ScrollReveal <<======================== -//
+        const sr = ScrollReveal({
+           origin: 'top',
+           distance: '600px',
+           duration: 1700,
+           delay: 300,
+        })
+        sr.reveal('.info')
+        sr.reveal('nav')
+        sr.reveal('img', {origin: 'left'})
+        sr.reveal('.Border-System')
+        sr.reveal('#TextSystems', {origin: 'bottom'})
+        sr.reveal('a')
+        sr.reveal('.Border-Dev')
+        sr.reveal('h1')
+        sr.reveal('p', {origin: 'left'})
+        // =====================>> Auto Typing <<======================== -//
+        var typed = new Typed(".auto-typing",{
+            strings: ["Desenvolvimentn de", "Desenvolvimento de Sistemas"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        })
+        var desenvolvimento = new Typed(".About",{
+            strings: ["Venha conhecer mais a respeito de cada um deles! Confira abaixo." ,"Aproveite o site!"],
+            typeSpeed: 60,
+            backSpeed: 15,
+            loop: true,
+        })
+    </script>
+</body>
+</html>
